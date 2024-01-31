@@ -1,6 +1,6 @@
 
 # Minhas soluções
-![Printo do desafio](/prints/1.png)
+![Print do desafio](prints/1.png)
 ```shell
  echo "hello world"
 ```  
