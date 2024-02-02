@@ -80,3 +80,43 @@ sort access.log
 ```shell
 grep "GET" access.log | wc -l
 ```
+![Print do desafio](prints/21.png)
+```shell
+cat split-me.txt | tr ";" "\n"
+```
+![Print do desafio](prints/22.png)
+```shell
+seq 1 100 | tr "\n" " " 
+```
+![Print do desafio](prints/23.png)
+```shell
+ sed -i "challenges are difficult" **/*.txt
+```
+![Print do desafio](prints/24.png)
+```shell
+ awk '{s+=$1} END {print s}' sum-me.txt 
+```
+![Print do desafio](prints/25.png)
+```shell
+ ls -R | grep ^[a-z] 
+```
+![Print do desafio](prints/26.png)
+```shell
+ mv * .* 
+```
+![Print do desafio](prints/27.png)
+```shell
+ ls  | tr " " "." 
+```
+![Print do desafio](prints/28.png)
+```shell
+ dirname **/*.tf | sort -u 
+```
+![Print do desafio](prints/29.png)
+```shell
+ ls -R | grep "^[0-9]" | grep -v dir  
+```
+![Print do desafio](prints/30.png)
+```shell
+ awk 'NR==25' faces.txt  
+```
