@@ -1,4 +1,3 @@
-
 # Minhas soluções
 ![Print do desafio](prints/1.png)
 ```shell
@@ -119,4 +118,52 @@ seq 1 100 | tr "\n" " "
 ![Print do desafio](prints/30.png)
 ```shell
  awk 'NR==25' faces.txt  
+```
+![Print do desafio](prints/31.png)
+```shell
+ tac reverse-me.txt 
+```
+![Print do desafio](prints/32.png)
+```shell
+cat -n faces.txt | sort -u -k 2 | sort -n | cut -f2
+```
+![Print do desafio](prints/33.png)
+```shell
+cat random-numbers.txt | factor | sort | uniq | awk 'NF==2' | wc -l 
+```
+![Print do desafio](prints/34.png)
+```shell
+ cat access.log.* | awk '{print $1}' | sort | uniq -d
+```
+![Print do desafio](prints/35.png)
+```shell
+  cat **/*access.log* | awk '/404/{print a} {a=$0}'
+```
+![Print do desafio](prints/36.png)
+```shell
+  diff *bin --to-file=base.bin | cut -d ' ' -f3 
+```
+![Print do desafio](prints/37.png)
+```shell
+  cat './.../  /. .the flag.txt' 
+```
+![Print do desafio](prints/38.png)
+```shell
+  grep -P "\t" * | wc -l 
+```
+![Print do desafio](prints/39.png)
+```shell
+  find . ! -name "*.txt" ! -name "*.exe" -delete 
+```
+![Print do desafio](prints/40.png)
+```shell
+  find . -name "-*" -delete 
+```
+![Print do desafio](prints/41.png)
+```shell
+  cat ps-* | sort -k2 -n | uniq  
+```
+![Print do desafio](prints/42.png)
+```shell
+  cat netstat.out | grep -w "LISTEN" | awk '{print $4}' | cut -d ':' -f2 | sort -nr 
 ```
