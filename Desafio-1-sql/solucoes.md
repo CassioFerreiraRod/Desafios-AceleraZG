@@ -29,3 +29,13 @@
     ON s.candidate_id = c.id
     ORDER BY avg DESC;
 ```
+### Produtos por Categorias (problema - 2609)
+
+![Print do desafio](prints/problema-2609.png)
+```SQL
+    SELECT c.name, sum(p.amount) as sum FROM categories c
+    INNER JOIN public.products p
+    ON c.id = p.id_categories
+    GROUP BY c.name
+    ORDER BY sum;
+```
